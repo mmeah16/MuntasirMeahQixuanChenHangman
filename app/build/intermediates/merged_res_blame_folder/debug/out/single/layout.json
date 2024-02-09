@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-mergeDebugResources-36:/layout/fragment_letter_buttons.xml",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-39:/layout/fragment_letter_buttons.xml"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-mergeDebugResources-36:/layout/activity_main.xml",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-39:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-mergeDebugResources-36:/layout/fragment_hangman_render.xml",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-39:/layout/fragment_hangman_render.xml"
+    },
+    {
+        "merged": "com.example.hangman.app-mergeDebugResources-36:/layout/fragment_letter_buttons.xml",
+        "source": "com.example.hangman.app-main-39:/layout/fragment_letter_buttons.xml"
+    }
+]
