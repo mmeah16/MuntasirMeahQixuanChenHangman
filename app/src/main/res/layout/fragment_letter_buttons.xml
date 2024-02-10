@@ -215,5 +215,11 @@
             android:text="Z"
             app:layout_column="2"
             app:layout_row="6" />
+
+        <Button
+            android:id="@+id/new_game_button"
+            android:text="New Game"
+            app:layout_column="3"
+            app:layout_row="6" />
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

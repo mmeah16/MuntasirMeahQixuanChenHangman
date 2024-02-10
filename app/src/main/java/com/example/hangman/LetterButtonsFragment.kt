@@ -62,6 +62,8 @@ class LetterButtonsFragment : Fragment() {
             xButton.setOnClickListener { handleButtonClick('X', xButton) }
             yButton.setOnClickListener { handleButtonClick('Y', yButton) }
             zButton.setOnClickListener { handleButtonClick('Z', zButton) }
+            zButton.setOnClickListener { handleButtonClick('Z', zButton) }
+            newGameButton.setOnClickListener { resetGame() }
         }
     }
 
@@ -89,6 +91,18 @@ class LetterButtonsFragment : Fragment() {
                 hangmanViewModel.addClickedButton(btn)
                 btn.visibility = View.INVISIBLE
             }
+        }
+    }
+
+    private fun resetGame() {
+        resetTextBox()
+        resetButtons()
+    }
+
+    private fun resetButtons() {
+        hangmanViewModel._numGuess.value = 0
+        for (btn in hangmanViewModel._buttonsClicked.value?.toMutableList()!!) {
+            btn.visibility = View.VISIBLE
         }
     }
     private fun resetTextBox() {

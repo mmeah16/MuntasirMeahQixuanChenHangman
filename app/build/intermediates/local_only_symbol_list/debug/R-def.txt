@@ -28,6 +28,7 @@ id k_button
 id l_button
 id m_button
 id n_button
+id new_game_button
 id o_button
 id p_button
 id q_button

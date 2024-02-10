@@ -67,6 +67,9 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
   public final Button nButton;
 
   @NonNull
+  public final Button newGameButton;
+
+  @NonNull
   public final Button oButton;
 
   @NonNull
@@ -125,13 +128,13 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
       @NonNull Button eButton, @NonNull Button fButton, @NonNull Button gButton,
       @NonNull GridLayout gridLayout, @NonNull Button hButton, @NonNull Button iButton,
       @NonNull Button jButton, @NonNull Button kButton, @NonNull Button lButton,
-      @NonNull Button mButton, @NonNull Button nButton, @NonNull Button oButton,
-      @NonNull Button pButton, @NonNull Button qButton, @NonNull Button rButton,
-      @NonNull Button sButton, @NonNull Button tButton, @NonNull TextView txtBox1,
-      @NonNull TextView txtBox2, @NonNull TextView txtBox3, @NonNull TextView txtBox4,
-      @NonNull TextView txtBox5, @NonNull Button uButton, @NonNull Button vButton,
-      @NonNull Button wButton, @NonNull GridLayout wordLayout, @NonNull Button xButton,
-      @NonNull Button yButton, @NonNull Button zButton) {
+      @NonNull Button mButton, @NonNull Button nButton, @NonNull Button newGameButton,
+      @NonNull Button oButton, @NonNull Button pButton, @NonNull Button qButton,
+      @NonNull Button rButton, @NonNull Button sButton, @NonNull Button tButton,
+      @NonNull TextView txtBox1, @NonNull TextView txtBox2, @NonNull TextView txtBox3,
+      @NonNull TextView txtBox4, @NonNull TextView txtBox5, @NonNull Button uButton,
+      @NonNull Button vButton, @NonNull Button wButton, @NonNull GridLayout wordLayout,
+      @NonNull Button xButton, @NonNull Button yButton, @NonNull Button zButton) {
     this.rootView = rootView;
     this.aButton = aButton;
     this.bButton = bButton;
@@ -148,6 +151,7 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
     this.lButton = lButton;
     this.mButton = mButton;
     this.nButton = nButton;
+    this.newGameButton = newGameButton;
     this.oButton = oButton;
     this.pButton = pButton;
     this.qButton = qButton;
@@ -285,6 +289,12 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.new_game_button;
+      Button newGameButton = ViewBindings.findChildViewById(rootView, id);
+      if (newGameButton == null) {
+        break missingId;
+      }
+
       id = R.id.o_button;
       Button oButton = ViewBindings.findChildViewById(rootView, id);
       if (oButton == null) {
@@ -395,9 +405,9 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
 
       return new FragmentLetterButtonsBinding((ConstraintLayout) rootView, aButton, bButton,
           cButton, dButton, eButton, fButton, gButton, gridLayout, hButton, iButton, jButton,
-          kButton, lButton, mButton, nButton, oButton, pButton, qButton, rButton, sButton, tButton,
-          txtBox1, txtBox2, txtBox3, txtBox4, txtBox5, uButton, vButton, wButton, wordLayout,
-          xButton, yButton, zButton);
+          kButton, lButton, mButton, nButton, newGameButton, oButton, pButton, qButton, rButton,
+          sButton, tButton, txtBox1, txtBox2, txtBox3, txtBox4, txtBox5, uButton, vButton, wButton,
+          wordLayout, xButton, yButton, zButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
