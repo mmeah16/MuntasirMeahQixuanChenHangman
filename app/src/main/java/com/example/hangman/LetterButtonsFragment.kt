@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.example.hangman.databinding.FragmentLetterButtonsBinding
@@ -35,6 +36,28 @@ class LetterButtonsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        hangmanViewModel._numHint.observe(viewLifecycleOwner) { numHint ->
+            if (hangmanViewModel._numHint.value == 2) {
+                if (hangmanViewModel._numGuess.value == 4) {
+                    Toast.makeText(context, "Hint not available!", Toast.LENGTH_SHORT).show()
+                }
+                hideButtons()
+
+            } else if (hangmanViewModel._numHint.value == 3) {
+                if (hangmanViewModel._numGuess.value == 4) {
+                    Toast.makeText(context, "Hint not available!", Toast.LENGTH_SHORT).show()
+                }
+                showVowels()
+
+            }
+        }
+        hangmanViewModel._numGuess.observe(viewLifecycleOwner) { numGuess ->
+            if (numGuess == 4) {
+                binding.apply {
+                    resetTextBox()
+                }
+            }
+        }
         binding.apply{
             aButton.setOnClickListener { handleCorrectButtonClick('A', aButton) }
             eButton.setOnClickListener { handleCorrectButtonClick('E', eButton) }
@@ -97,10 +120,43 @@ class LetterButtonsFragment : Fragment() {
     private fun resetGame() {
         resetTextBox()
         resetButtons()
+        hangmanViewModel._numGuess.value = 0
+        hangmanViewModel._numHint.value = 0
+    }
+
+    private fun hideButtons() {
+        val nonWordLetters = listOf(
+            binding.bButton, binding.cButton, binding.dButton, binding.fButton,
+            binding.hButton, binding.iButton, binding.jButton,
+            binding.kButton, binding.lButton, binding.mButton, binding.nButton,
+            binding.oButton, binding.pButton, binding.qButton, binding.sButton,
+            binding.tButton, binding.uButton, binding.vButton, binding.wButton,
+            binding.xButton, binding.yButton, binding.zButton
+        )
+
+        val notClicked = mutableListOf<Button>()
+
+        for (button in nonWordLetters) {
+            if (button !in hangmanViewModel._buttonsClicked.value.orEmpty()) {
+                notClicked.add(button)
+            }
+        }
+        notClicked.shuffle()
+        val halfSize = notClicked.size / 2
+        val currentButtonsClicked = hangmanViewModel._buttonsClicked.value.orEmpty().toMutableList()
+
+        for (i in 0 until halfSize) {
+            notClicked[i].visibility = View.INVISIBLE
+            currentButtonsClicked.add(notClicked[i])
+        }
+
+        hangmanViewModel._buttonsClicked.value = currentButtonsClicked
+        hangmanViewModel.incrementGuess()
     }
 
     private fun resetButtons() {
         hangmanViewModel._numGuess.value = 0
+        hangmanViewModel._numHint.value = 0
         for (btn in hangmanViewModel._buttonsClicked.value?.toMutableList()!!) {
             btn.visibility = View.VISIBLE
         }
@@ -129,5 +185,14 @@ class LetterButtonsFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    fun showVowels() {
+        binding.apply {
+            txtBox1.text = "A"
+            txtBox4.text = "E"
+            txtBox5.text = "E"
+        }
+        hangmanViewModel.incrementGuess()
     }
 }

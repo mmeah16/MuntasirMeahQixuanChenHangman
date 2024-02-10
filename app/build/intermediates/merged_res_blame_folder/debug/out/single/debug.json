@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_3.png.flat",
-        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_3.png"
-    },
-    {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_ic_launcher_foreground.xml.flat",
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_3.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_3.png"
     },
     {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_textview_border.xml.flat",
@@ -20,12 +20,12 @@
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
-    },
-    {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_5.png.flat",
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_5.png"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_activity_main.xml.flat",
@@ -82,10 +82,6 @@
     {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.hangman.app-merged_res-38:/layout-land_activity_main.xml.flat",
-        "source": "com.example.hangman.app-main-40:/layout-land/activity_main.xml"
     },
     {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",

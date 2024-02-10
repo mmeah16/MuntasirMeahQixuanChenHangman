@@ -37,20 +37,37 @@ class HintFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.apply {
-            hintButton.setOnClickListener { getHint() }
+            hintButton.setOnClickListener { incrementHint() }
+        }
+        hangmanViewModel._numHint.observe(viewLifecycleOwner) { numHint ->
+            if (hangmanViewModel._numHint.value == 0) {
+                binding.apply {
+                    hintTextview?.text  = "Hint: "
+                }
+            }
+            if (hangmanViewModel._numHint.value == 1) {
+                hint1()
+            }
         }
     }
+
+
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
 
-    private fun getHint() {
+    fun incrementHint() {
+        hangmanViewModel.incrementHint()
+        if (hangmanViewModel._numGuess.value == 4) {
+            Toast.makeText(context, "Hint not available!", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    fun hint1() {
         binding.apply {
-            if (hint == 0) {
-                hintTextview?.text = "HINT: Verb"
-            }
+            hintTextview?.text  = "HINT: VERB"
         }
     }
 

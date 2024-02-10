@@ -51,6 +51,9 @@ class HangmanRenderFragment : Fragment() {
                 }
             }
         }
+        hangmanViewModel._numHint.observe(viewLifecycleOwner) { numHint ->
+
+        }
     }
 
 
