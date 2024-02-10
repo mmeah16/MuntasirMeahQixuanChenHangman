@@ -121,7 +121,7 @@ class LetterButtonsFragment : Fragment() {
         numGuesses += 1
         Log.d("HangmanGame", "Number of Guesses from LetterButtonsFragment: $numGuesses")
         btn.visibility = View.INVISIBLE
-        if (numGuesses == 4) {
+        if (numGuesses >= 4) {
             resetTextBox()
             numGuesses = 0
         }
