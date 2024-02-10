@@ -1,23 +1,25 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    >
-
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment_container1"
-        android:name="com.example.hangman.HangmanRenderFragment"
-        android:layout_width="224dp"
-        android:layout_height="264dp"
-        tools:context=".MainActivity" />
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container2"
-        android:name="com.example.hangman.LetterButtonsFragment"
-        android:layout_width="354dp"
+        android:name="com.example.hangman.HangmanRenderFragment"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
+        android:layout_weight="1"
         android:layout_marginTop="50dp"
         tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container1"
+        android:name="com.example.hangman.LetterButtonsFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:context=".MainActivity"/>
 
 </LinearLayout>
