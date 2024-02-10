@@ -3321,6 +3321,7 @@ int id h_button 0x7f0800db
 int id header_title 0x7f0800dc
 int id hide_ime_id 0x7f0800dd
 int id hideable 0x7f0800de
+int id hint_button 0x7f08021a
 int id home 0x7f0800df
 int id homeAsUp 0x7f0800e0
 int id honorRequest 0x7f0800e1
@@ -3767,6 +3768,7 @@ int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
 int layout fragment_hangman_render 0x7f0b002d
+int layout fragment_hint 0x7f0b006e
 int layout fragment_letter_buttons 0x7f0b002e
 int layout ime_base_split_test_activity 0x7f0b002f
 int layout ime_secondary_split_test_activity 0x7f0b0030
@@ -3896,6 +3898,7 @@ int string fab_transformation_sheet_behavior 0x7f0f0039
 int string g_button 0x7f0f003a
 int string h_button 0x7f0f003b
 int string hide_bottom_view_on_scroll_behavior 0x7f0f003c
+int string hint 0x7f0f00c3
 int string i_button 0x7f0f003d
 int string icon_content_description 0x7f0f003e
 int string initial 0x7f0f003f

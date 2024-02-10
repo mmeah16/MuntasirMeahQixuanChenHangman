@@ -3322,6 +3322,7 @@ id h_button
 id header_title
 id hide_ime_id
 id hideable
+id hint_button
 id home
 id homeAsUp
 id honorRequest
@@ -3768,6 +3769,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_hangman_render
+layout fragment_hint
 layout fragment_letter_buttons
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
@@ -3897,6 +3899,7 @@ string fab_transformation_sheet_behavior
 string g_button
 string h_button
 string hide_bottom_view_on_scroll_behavior
+string hint
 string i_button
 string icon_content_description
 string initial

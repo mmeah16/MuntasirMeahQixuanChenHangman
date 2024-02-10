@@ -21,6 +21,7 @@ id fragment_container2
 id g_button
 id gridLayout
 id h_button
+id hint_button
 id i_button
 id imageView1
 id j_button
@@ -49,6 +50,7 @@ id y_button
 id z_button
 layout activity_main
 layout fragment_hangman_render
+layout fragment_hint
 layout fragment_letter_buttons
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -62,6 +64,7 @@ string e_button
 string f_button
 string g_button
 string h_button
+string hint
 string i_button
 string initial
 string j_button

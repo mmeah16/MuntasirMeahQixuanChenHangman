@@ -1,138 +1,146 @@
 [
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_5.png.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_5.png"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_3.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_3.png"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/xml/data_extraction_rules.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_textview_border.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/textview_border.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/xml_backup_rules.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/xml/backup_rules.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_5.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_5.png"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_fragment_letter_buttons.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/fragment_letter_buttons.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_activity_main.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/activity_main.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_1.png.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_1.png"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_fragment_hint.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/fragment_hint.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_3.png.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_3.png"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/xml_backup_rules.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_fragment_hint.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/fragment_hint.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_textview_border.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/textview_border.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_1.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_1.png"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/ic_launcher_foreground.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_2.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_2.png"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_fragment_hangman_render.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/fragment_hangman_render.xml"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "com.example.hangman.app-merged_res-38:/layout-land_activity_main.xml.flat",
         "source": "com.example.hangman.app-main-40:/layout-land/activity_main.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_fragment_hangman_render.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/fragment_hangman_render.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_fragment_hangman_render.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/fragment_hangman_render.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_2.png.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_2.png"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_activity_main.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/activity_main.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_activity_main.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/activity_main.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_4.png.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_4.png"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_fragment_hangman_render.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/fragment_hangman_render.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_fragment_letter_buttons.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/fragment_letter_buttons.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_fragment_letter_buttons.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/fragment_letter_buttons.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout_activity_main.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/layout-land_fragment_letter_buttons.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/layout-land/fragment_letter_buttons.xml"
     },
     {
-        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_4.png.flat",
-        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_4.png"
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/ic_launcher_background.xml"
     }
 ]
