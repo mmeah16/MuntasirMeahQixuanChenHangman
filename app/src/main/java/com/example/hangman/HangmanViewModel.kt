@@ -10,6 +10,8 @@ class HangmanViewModel : ViewModel() {
     val guessedLetters: LiveData<List<Char>> = _guessedLetters
     val _numGuess = MutableLiveData<Int>()
     val _numHint = MutableLiveData<Int>()
+
+
     fun incrementGuess() {
         _numGuess.value = (_numGuess.value ?: 0) + 1
     }

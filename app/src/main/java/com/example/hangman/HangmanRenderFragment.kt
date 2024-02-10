@@ -45,6 +45,7 @@ class HangmanRenderFragment : Fragment() {
             if (numGuess == 4) {
                 Toast.makeText(context, "You lose!", Toast.LENGTH_SHORT).show()
                 hangmanViewModel._numGuess.value = 0
+                hangmanViewModel._numHint.value = 0
                 Log.d("HangmanGame", "Number of Guesses: $numGuess")
                 for (btn in hangmanViewModel._buttonsClicked.value?.toMutableList()!!) {
                     btn.visibility = View.VISIBLE
