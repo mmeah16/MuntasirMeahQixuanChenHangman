@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.gridlayout.widget.GridLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.hangman.R;
@@ -40,6 +41,9 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
 
   @NonNull
   public final Button gButton;
+
+  @NonNull
+  public final GridLayout gridLayout;
 
   @NonNull
   public final Button hButton;
@@ -116,14 +120,15 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
   private FragmentLetterButtonsBinding(@NonNull ConstraintLayout rootView, @NonNull Button aButton,
       @NonNull Button bButton, @NonNull Button cButton, @NonNull Button dButton,
       @NonNull Button eButton, @NonNull Button fButton, @NonNull Button gButton,
-      @NonNull Button hButton, @NonNull Button iButton, @NonNull Button jButton,
-      @NonNull Button kButton, @NonNull Button lButton, @NonNull Button mButton,
-      @NonNull Button nButton, @NonNull Button oButton, @NonNull Button pButton,
-      @NonNull Button qButton, @NonNull Button rButton, @NonNull Button sButton,
-      @NonNull Button tButton, @NonNull TextView txtBox1, @NonNull TextView txtBox2,
-      @NonNull TextView txtBox3, @NonNull TextView txtBox4, @NonNull TextView txtBox5,
-      @NonNull Button uButton, @NonNull Button vButton, @NonNull Button wButton,
-      @NonNull Button xButton, @NonNull Button yButton, @NonNull Button zButton) {
+      @NonNull GridLayout gridLayout, @NonNull Button hButton, @NonNull Button iButton,
+      @NonNull Button jButton, @NonNull Button kButton, @NonNull Button lButton,
+      @NonNull Button mButton, @NonNull Button nButton, @NonNull Button oButton,
+      @NonNull Button pButton, @NonNull Button qButton, @NonNull Button rButton,
+      @NonNull Button sButton, @NonNull Button tButton, @NonNull TextView txtBox1,
+      @NonNull TextView txtBox2, @NonNull TextView txtBox3, @NonNull TextView txtBox4,
+      @NonNull TextView txtBox5, @NonNull Button uButton, @NonNull Button vButton,
+      @NonNull Button wButton, @NonNull Button xButton, @NonNull Button yButton,
+      @NonNull Button zButton) {
     this.rootView = rootView;
     this.aButton = aButton;
     this.bButton = bButton;
@@ -132,6 +137,7 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
     this.eButton = eButton;
     this.fButton = fButton;
     this.gButton = gButton;
+    this.gridLayout = gridLayout;
     this.hButton = hButton;
     this.iButton = iButton;
     this.jButton = jButton;
@@ -224,6 +230,12 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
       id = R.id.g_button;
       Button gButton = ViewBindings.findChildViewById(rootView, id);
       if (gButton == null) {
+        break missingId;
+      }
+
+      id = R.id.gridLayout;
+      GridLayout gridLayout = ViewBindings.findChildViewById(rootView, id);
+      if (gridLayout == null) {
         break missingId;
       }
 
@@ -372,9 +384,10 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
       }
 
       return new FragmentLetterButtonsBinding((ConstraintLayout) rootView, aButton, bButton,
-          cButton, dButton, eButton, fButton, gButton, hButton, iButton, jButton, kButton, lButton,
-          mButton, nButton, oButton, pButton, qButton, rButton, sButton, tButton, txtBox1, txtBox2,
-          txtBox3, txtBox4, txtBox5, uButton, vButton, wButton, xButton, yButton, zButton);
+          cButton, dButton, eButton, fButton, gButton, gridLayout, hButton, iButton, jButton,
+          kButton, lButton, mButton, nButton, oButton, pButton, qButton, rButton, sButton, tButton,
+          txtBox1, txtBox2, txtBox3, txtBox4, txtBox5, uButton, vButton, wButton, xButton, yButton,
+          zButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

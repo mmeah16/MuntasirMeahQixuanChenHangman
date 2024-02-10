@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.hangman.app-mergeDebugResources-35:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.hangman.app-mergeDebugResources-36:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "/Users/muntasirmeah/.gradle/caches/transforms-3/a690b269fdae87765d7d9b2f00727dff/transformed/material-1.11.0/res/values-small-v4/values-small-v4.xml",
+                    "source": "/Users/vinda/.gradle/caches/transforms-3/a690b269fdae87765d7d9b2f00727dff/transformed/material-1.11.0/res/values-small-v4/values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

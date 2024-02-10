@@ -18,6 +18,7 @@ id f_button
 id fragment_container1
 id fragment_container2
 id g_button
+id gridLayout
 id h_button
 id i_button
 id imageView1
