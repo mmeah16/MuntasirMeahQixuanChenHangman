@@ -10,7 +10,15 @@
         android:name="com.example.hangman.LetterButtonsFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1.5"
+        android:layout_weight="2"
+        tools:context=".MainActivity" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container3"
+        android:name="com.example.hangman.HintFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
         tools:context=".MainActivity" />
 
     <androidx.fragment.app.FragmentContainerView
@@ -19,7 +27,6 @@
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        tools:context=".MainActivity"/>
-
+        tools:context=".MainActivity" />
 
 </LinearLayout>

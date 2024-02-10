@@ -3304,6 +3304,7 @@ int id floating 0x7f0800ca
 int id forever 0x7f0800cb
 int id fragment_container1 0x7f0800cc
 int id fragment_container2 0x7f0800cd
+int id fragment_container3 0x7f080219
 int id fragment_container_view_tag 0x7f0800ce
 int id frost 0x7f0800cf
 int id fullscreen_header 0x7f0800d0
@@ -3322,6 +3323,7 @@ int id header_title 0x7f0800dc
 int id hide_ime_id 0x7f0800dd
 int id hideable 0x7f0800de
 int id hint_button 0x7f08021a
+int id hint_textview 0x7f08021b
 int id home 0x7f0800df
 int id homeAsUp 0x7f0800e0
 int id honorRequest 0x7f0800e1
@@ -3899,6 +3901,7 @@ int string g_button 0x7f0f003a
 int string h_button 0x7f0f003b
 int string hide_bottom_view_on_scroll_behavior 0x7f0f003c
 int string hint 0x7f0f00c3
+int string hint_textbox 0x7f0f00c4
 int string i_button 0x7f0f003d
 int string icon_content_description 0x7f0f003e
 int string initial 0x7f0f003f

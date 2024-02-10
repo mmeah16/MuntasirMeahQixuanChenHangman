@@ -25,12 +25,30 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final FragmentContainerView fragmentContainer2;
 
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final FragmentContainerView fragmentContainer3;
+
   private ActivityMainBinding(@NonNull LinearLayout rootView,
       @NonNull FragmentContainerView fragmentContainer1,
-      @NonNull FragmentContainerView fragmentContainer2) {
+      @NonNull FragmentContainerView fragmentContainer2,
+      @Nullable FragmentContainerView fragmentContainer3) {
     this.rootView = rootView;
     this.fragmentContainer1 = fragmentContainer1;
     this.fragmentContainer2 = fragmentContainer2;
+    this.fragmentContainer3 = fragmentContainer3;
   }
 
   @Override
@@ -72,8 +90,11 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fragment_container3;
+      FragmentContainerView fragmentContainer3 = ViewBindings.findChildViewById(rootView, id);
+
       return new ActivityMainBinding((LinearLayout) rootView, fragmentContainer1,
-          fragmentContainer2);
+          fragmentContainer2, fragmentContainer3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

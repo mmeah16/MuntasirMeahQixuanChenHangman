@@ -29,4 +29,5 @@
     <string name="z_button">Z</string>
     <string name="string_initial">"   "</string>
     <string name="hint">Hint!</string>
+    <string name="hint_textbox">HINT:</string>
 </resources>

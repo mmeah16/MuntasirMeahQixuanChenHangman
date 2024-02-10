@@ -9,11 +9,15 @@ class HangmanViewModel : ViewModel() {
     private val _guessedLetters = MutableLiveData<List<Char>>()
     val guessedLetters: LiveData<List<Char>> = _guessedLetters
     val _numGuess = MutableLiveData<Int>()
+    val _numHint = MutableLiveData<Int>()
     fun incrementGuess() {
         _numGuess.value = (_numGuess.value ?: 0) + 1
     }
     val _buttonsClicked = MutableLiveData<List<Button>>()
 
+    fun incrementHint() {
+        _numHint.value = (_numHint.value ?: 0) + 1
+    }
 
     fun addGuessedLetter(letter: Char) {
         val currentList = _guessedLetters.value.orEmpty().toMutableList()
@@ -26,5 +30,6 @@ class HangmanViewModel : ViewModel() {
         currentList.add(button)
         _buttonsClicked.value = currentList
     }
+
 
 }

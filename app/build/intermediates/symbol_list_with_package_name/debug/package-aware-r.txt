@@ -3305,6 +3305,7 @@ id floating
 id forever
 id fragment_container1
 id fragment_container2
+id fragment_container3
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3323,6 +3324,7 @@ id header_title
 id hide_ime_id
 id hideable
 id hint_button
+id hint_textview
 id home
 id homeAsUp
 id honorRequest
@@ -3900,6 +3902,7 @@ string g_button
 string h_button
 string hide_bottom_view_on_scroll_behavior
 string hint
+string hint_textbox
 string i_button
 string icon_content_description
 string initial

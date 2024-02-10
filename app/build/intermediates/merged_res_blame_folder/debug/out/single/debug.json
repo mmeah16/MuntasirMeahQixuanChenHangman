@@ -68,6 +68,10 @@
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_1.png"
     },
     {
+        "merged": "com.example.hangman.app-merged_res-38:/layout-land_fragment_hint.xml.flat",
+        "source": "com.example.hangman.app-main-40:/layout-land/fragment_hint.xml"
+    },
+    {
         "merged": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_hangman_2.png.flat",
         "source": "/Users/muntasirmeah/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_2.png"
     },

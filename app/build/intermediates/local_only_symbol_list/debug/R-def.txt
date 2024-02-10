@@ -18,10 +18,12 @@ id e_button
 id f_button
 id fragment_container1
 id fragment_container2
+id fragment_container3
 id g_button
 id gridLayout
 id h_button
 id hint_button
+id hint_textview
 id i_button
 id imageView1
 id j_button
@@ -65,6 +67,7 @@ string f_button
 string g_button
 string h_button
 string hint
+string hint_textbox
 string i_button
 string initial
 string j_button
