@@ -12,7 +12,7 @@ class HangmanViewModel : ViewModel() {
     fun incrementGuess() {
         _numGuess.value = (_numGuess.value ?: 0) + 1
     }
-    val buttonsClicked = mutableListOf<Button>()
+    val _buttonsClicked = MutableLiveData<List<Button>>()
 
 
     fun addGuessedLetter(letter: Char) {
@@ -22,8 +22,9 @@ class HangmanViewModel : ViewModel() {
     }
 
     fun addClickedButton(button: Button) {
-        val buttonsClicked = mutableListOf<Button>()
-        buttonsClicked.add(button)
+        val currentList = _buttonsClicked.value.orEmpty().toMutableList()
+        currentList.add(button)
+        _buttonsClicked.value = currentList
     }
 
 }

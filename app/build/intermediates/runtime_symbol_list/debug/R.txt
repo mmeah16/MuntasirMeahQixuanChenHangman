@@ -3999,6 +3999,7 @@ int string searchview_navigation_content_description 0x7f0f00ad
 int string side_sheet_accessibility_pane_title 0x7f0f00ae
 int string side_sheet_behavior 0x7f0f00af
 int string status_bar_notification_info_overflow 0x7f0f00b0
+int string string_initial 0x7f0f00c2
 int string t_button 0x7f0f00bb
 int string u_button 0x7f0f00bc
 int string v_button 0x7f0f00bd

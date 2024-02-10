@@ -70,6 +70,7 @@ string p_button
 string q_button
 string r_button
 string s_button
+string string_initial
 string t_button
 string u_button
 string v_button

@@ -1,6 +1,7 @@
 package com.example.hangman
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,7 +18,7 @@ class LetterButtonsFragment : Fragment() {
             "Cannot access binding because it is null. Is the view visible?"
         }
 
-
+    var numGuesses : Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -90,12 +91,26 @@ class LetterButtonsFragment : Fragment() {
             }
         }
     }
-
+    private fun resetTextBox() {
+        binding.apply {
+            txtBox1.text = getString(R.string.string_initial)
+            txtBox2.text = getString(R.string.string_initial)
+            txtBox3.text = getString(R.string.string_initial)
+            txtBox4.text = getString(R.string.string_initial)
+            txtBox5.text = getString(R.string.string_initial)
+        }
+    }
     private fun handleButtonClick(letter: Char, btn: Button) {
         hangmanViewModel.addGuessedLetter(letter)
         hangmanViewModel.incrementGuess()
         hangmanViewModel.addClickedButton(btn)
+        numGuesses += 1
+        Log.d("HangmanGame", "Number of Guesses from LetterButtonsFragment: $numGuesses")
         btn.visibility = View.INVISIBLE
+        if (numGuesses == 4) {
+            resetTextBox()
+            numGuesses = 0
+        }
     }
     override fun onDestroyView() {
         super.onDestroyView()

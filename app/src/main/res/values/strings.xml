@@ -27,4 +27,5 @@
     <string name="x_button">X</string>
     <string name="y_button">Y</string>
     <string name="z_button">Z</string>
+    <string name="string_initial">"   "</string>
 </resources>

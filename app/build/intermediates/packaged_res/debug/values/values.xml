@@ -3,7 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <string name="a_button">A</string>
-    <string name="app_name">Hangman</string>
+    <string name="app_name">MuntasirMeah,QixuanChen,Hangman</string>
     <string name="b_button">B</string>
     <string name="c_button">C</string>
     <string name="d_button">D</string>
@@ -23,6 +23,7 @@
     <string name="q_button">Q</string>
     <string name="r_button">R</string>
     <string name="s_button">S</string>
+    <string name="string_initial">"   "</string>
     <string name="t_button">T</string>
     <string name="u_button">U</string>
     <string name="v_button">V</string>

@@ -42,10 +42,11 @@ class HangmanRenderFragment : Fragment() {
                 binding.imageView1.setImageResource(imageIds[numGuess])
                 Log.d("HangmanGame", "Number of Guesses: $numGuess")
             }
-            if (numGuess == 5) {
+            if (numGuess == 4) {
                 Toast.makeText(context, "You lose!", Toast.LENGTH_SHORT).show()
                 hangmanViewModel._numGuess.value = 0
-                for (btn in hangmanViewModel.buttonsClicked) {
+                Log.d("HangmanGame", "Number of Guesses: $numGuess")
+                for (btn in hangmanViewModel._buttonsClicked.value?.toMutableList()!!) {
                     btn.visibility = View.VISIBLE
                 }
             }
@@ -58,7 +59,7 @@ class HangmanRenderFragment : Fragment() {
         _binding = null
     }
 
-     val imageIds = arrayOf(
+     private val imageIds = arrayOf(
         R.drawable.hangman_1,
         R.drawable.hangman_2,
         R.drawable.hangman_3,
