@@ -3095,6 +3095,7 @@ int drawable notification_template_icon_low_bg 0x7f0700e5
 int drawable notification_tile_bg 0x7f0700e6
 int drawable notify_panel_notification_icon_bg 0x7f0700e7
 int drawable test_level_drawable 0x7f0700e8
+int drawable textview_border 0x7f0700eb
 int drawable tooltip_frame_dark 0x7f0700e9
 int drawable tooltip_frame_light 0x7f0700ea
 int id ALT 0x7f080000
@@ -3624,6 +3625,7 @@ int id west 0x7f08020b
 int id withText 0x7f08020c
 int id with_icon 0x7f08020d
 int id withinBounds 0x7f08020e
+int id wordLayout 0x7f080217
 int id wrap 0x7f08020f
 int id wrap_content 0x7f080210
 int id wrap_content_constrained 0x7f080211

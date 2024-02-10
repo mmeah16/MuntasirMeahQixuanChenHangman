@@ -4,58 +4,69 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <TextView
-        android:id="@+id/txtBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/initial"
-        android:textSize="15sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtBox2"
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/wordLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/initial"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/txtBox1"
-        app:layout_constraintTop_toTopOf="@id/txtBox1"
-        app:layout_constraintBottom_toBottomOf="@id/txtBox1"
-        android:layout_marginStart="8dp"/>
+        app:columnCount="5"
+        app:rowCount="1"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/txtBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/initial"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/txtBox2"
-        app:layout_constraintTop_toTopOf="@id/txtBox2"
-        app:layout_constraintBottom_toBottomOf="@id/txtBox2"
-        android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/txtBox1"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/initial"
+            android:textSize="35dp"
+            android:background="@drawable/textview_border"
+            app:layout_column="0"
+            app:layout_row="0" />
+        <TextView
+            android:id="@+id/txtBox2"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/initial"
+            android:textSize="35dp"
+            android:background="@drawable/textview_border"
+            app:layout_column="1"
+            app:layout_row="0" />
 
-    <TextView
-        android:id="@+id/txtBox4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/initial"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/txtBox3"
-        app:layout_constraintTop_toTopOf="@id/txtBox3"
-        app:layout_constraintBottom_toBottomOf="@id/txtBox3"
-        android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/txtBox3"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/initial"
+            android:textSize="35dp"
+            android:background="@drawable/textview_border"
+            app:layout_column="2"
+            app:layout_row="0" />
 
-    <TextView
-        android:id="@+id/txtBox5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/initial"
-        android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@+id/txtBox4"
-        app:layout_constraintTop_toTopOf="@id/txtBox4"
-        app:layout_constraintBottom_toBottomOf="@id/txtBox4"
-        android:layout_marginStart="8dp"/>
+        <TextView
+            android:id="@+id/txtBox4"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/initial"
+            android:textSize="35dp"
+            android:background="@drawable/textview_border"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/txtBox5"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="@string/initial"
+            android:textSize="35dp"
+            android:background="@drawable/textview_border"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+
+
+    </androidx.gridlayout.widget.GridLayout>
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"

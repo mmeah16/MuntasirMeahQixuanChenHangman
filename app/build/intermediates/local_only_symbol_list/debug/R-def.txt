@@ -9,6 +9,7 @@ drawable hangman_4
 drawable hangman_5
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable textview_border
 id a_button
 id b_button
 id c_button
@@ -41,6 +42,7 @@ id txtBox5
 id u_button
 id v_button
 id w_button
+id wordLayout
 id x_button
 id y_button
 id z_button

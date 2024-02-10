@@ -4,10 +4,6 @@
         "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/hangman_5.png"
     },
     {
-        "merged": "com.example.hangman.app-merged_res-38:/layout_activity_main.xml.flat",
-        "source": "com.example.hangman.app-main-40:/layout/activity_main.xml"
-    },
-    {
         "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-mdpi/ic_launcher.webp"
     },
@@ -62,6 +58,10 @@
     {
         "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/drawable_textview_border.xml.flat",
+        "source": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-main-40:/drawable/textview_border.xml"
     },
     {
         "merged": "/Users/vinda/.gradle/daemon/8.2/com.example.hangman.app-merged_res-38:/mipmap-xxhdpi_ic_launcher_round.webp.flat",

@@ -109,6 +109,9 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
   public final Button wButton;
 
   @NonNull
+  public final GridLayout wordLayout;
+
+  @NonNull
   public final Button xButton;
 
   @NonNull
@@ -127,8 +130,8 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
       @NonNull Button sButton, @NonNull Button tButton, @NonNull TextView txtBox1,
       @NonNull TextView txtBox2, @NonNull TextView txtBox3, @NonNull TextView txtBox4,
       @NonNull TextView txtBox5, @NonNull Button uButton, @NonNull Button vButton,
-      @NonNull Button wButton, @NonNull Button xButton, @NonNull Button yButton,
-      @NonNull Button zButton) {
+      @NonNull Button wButton, @NonNull GridLayout wordLayout, @NonNull Button xButton,
+      @NonNull Button yButton, @NonNull Button zButton) {
     this.rootView = rootView;
     this.aButton = aButton;
     this.bButton = bButton;
@@ -159,6 +162,7 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
     this.uButton = uButton;
     this.vButton = vButton;
     this.wButton = wButton;
+    this.wordLayout = wordLayout;
     this.xButton = xButton;
     this.yButton = yButton;
     this.zButton = zButton;
@@ -365,6 +369,12 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.wordLayout;
+      GridLayout wordLayout = ViewBindings.findChildViewById(rootView, id);
+      if (wordLayout == null) {
+        break missingId;
+      }
+
       id = R.id.x_button;
       Button xButton = ViewBindings.findChildViewById(rootView, id);
       if (xButton == null) {
@@ -386,8 +396,8 @@ public final class FragmentLetterButtonsBinding implements ViewBinding {
       return new FragmentLetterButtonsBinding((ConstraintLayout) rootView, aButton, bButton,
           cButton, dButton, eButton, fButton, gButton, gridLayout, hButton, iButton, jButton,
           kButton, lButton, mButton, nButton, oButton, pButton, qButton, rButton, sButton, tButton,
-          txtBox1, txtBox2, txtBox3, txtBox4, txtBox5, uButton, vButton, wButton, xButton, yButton,
-          zButton);
+          txtBox1, txtBox2, txtBox3, txtBox4, txtBox5, uButton, vButton, wButton, wordLayout,
+          xButton, yButton, zButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
