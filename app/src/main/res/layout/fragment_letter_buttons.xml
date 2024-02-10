@@ -73,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:columnCount="4"
-        app:rowCount="8"
+        app:rowCount="9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -218,8 +218,9 @@
 
         <Button
             android:id="@+id/new_game_button"
-            android:text="New Game"
-            app:layout_column="3"
-            app:layout_row="6" />
+            android:text="        New Game        "
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_row="7" />
     </androidx.gridlayout.widget.GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
