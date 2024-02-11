@@ -58,7 +58,17 @@ class LetterButtonsFragment : Fragment() {
         }
         hangmanViewModel._correctLetters.observe(viewLifecycleOwner) { correctLetters ->
             for (letter in correctLetters) {
-                binding.txtBox1.text = letter.toString()
+                if (letter == 'A') {
+                    binding.txtBox1.text = letter.toString()
+                } else if (letter == 'G') {
+                    binding.txtBox2.text = letter.toString()
+                } else if (letter == 'R') {
+                    binding.txtBox3.text = letter.toString()
+                }  else if (letter == 'E') {
+                    binding.txtBox4.text = letter.toString()
+                    binding.txtBox5.text = letter.toString()
+                }
+
             }
         }
 
@@ -147,16 +157,26 @@ class LetterButtonsFragment : Fragment() {
                 binding.txtBox4.text = "E"
                 binding.txtBox5.text = "E"
                 hangmanViewModel.addClickedButton(btn)
+                val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
+                currentList.add(3, 'E')
+                currentList.add(4, 'E')
+                hangmanViewModel._correctLetters.value = currentList
                 btn.visibility = View.INVISIBLE
             }
             'G' -> {
                 binding.txtBox2.text = "G"
                 hangmanViewModel.addClickedButton(btn)
+                val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
+                currentList.add(1, 'G')
+                hangmanViewModel._correctLetters.value = currentList
                 btn.visibility = View.INVISIBLE
             }
             'R' -> {
                 binding.txtBox3.text = "R"
                 hangmanViewModel.addClickedButton(btn)
+                val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
+                currentList.add(2, 'R')
+                hangmanViewModel._correctLetters.value = currentList
                 btn.visibility = View.INVISIBLE
             }
         }
