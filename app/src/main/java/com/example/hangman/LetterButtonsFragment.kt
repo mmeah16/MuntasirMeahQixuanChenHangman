@@ -57,13 +57,14 @@ class LetterButtonsFragment : Fragment() {
                 }
             }
         }
-        hangmanViewModel._correctGuesses.observe(viewLifecycleOwner) { correctGuesses ->
-            if (correctGuesses == 5) {
-                Toast.makeText(context, "You win!", Toast.LENGTH_SHORT).show()
-                resetGame()
-                resetButtons()
-                resetTextBox()
-                resetCorrectLetters()
+        hangmanViewModel._correctGuesses.observe(viewLifecycleOwner) { correctGuess ->
+            if (correctGuess == 5) {
+                binding.apply {
+                    Toast.makeText(context, "You win!", Toast.LENGTH_SHORT).show()
+                    hangmanViewModel._correctGuesses.value = 0
+                    hangmanViewModel._numHint.value = 0
+                    hangmanViewModel._numGuess.value = 0
+                }
             }
         }
         hangmanViewModel._correctLetters.observe(viewLifecycleOwner) { correctLetters ->
@@ -89,6 +90,7 @@ class LetterButtonsFragment : Fragment() {
                 }
             }
         }
+
 
         hangmanViewModel._buttonsClicked.observe(viewLifecycleOwner) { buttonsClicked ->
             Log.d("HangmanGame", "These are all the button clicked: $buttonsClicked")
