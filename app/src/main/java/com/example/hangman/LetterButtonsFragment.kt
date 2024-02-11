@@ -57,7 +57,17 @@ class LetterButtonsFragment : Fragment() {
                 }
             }
         }
+        hangmanViewModel._correctGuesses.observe(viewLifecycleOwner) { correctGuesses ->
+            if (correctGuesses == 5) {
+                Toast.makeText(context, "You win!", Toast.LENGTH_SHORT).show()
+                resetGame()
+                resetButtons()
+                resetTextBox()
+                resetCorrectLetters()
+            }
+        }
         hangmanViewModel._correctLetters.observe(viewLifecycleOwner) { correctLetters ->
+            Log.d("Hangman Game" , "$correctLetters")
             if (correctLetters[0] == 'A' &&
                 correctLetters[1] == 'G' &&
                 correctLetters[2] == 'R' &&
@@ -159,6 +169,7 @@ class LetterButtonsFragment : Fragment() {
                 val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
                 currentList.add(0, 'A')
                 hangmanViewModel._correctLetters.value = currentList
+                hangmanViewModel.incrementCorrectGuess()
                 btn.visibility = View.INVISIBLE
             }
             'E' -> {
@@ -168,6 +179,8 @@ class LetterButtonsFragment : Fragment() {
                 val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
                 currentList.add(3, 'E')
                 currentList.add(4, 'E')
+                hangmanViewModel.incrementCorrectGuess()
+                hangmanViewModel.incrementCorrectGuess()
                 hangmanViewModel._correctLetters.value = currentList
                 btn.visibility = View.INVISIBLE
             }
@@ -177,6 +190,7 @@ class LetterButtonsFragment : Fragment() {
                 val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
                 currentList.add(1, 'G')
                 hangmanViewModel._correctLetters.value = currentList
+                hangmanViewModel.incrementCorrectGuess()
                 btn.visibility = View.INVISIBLE
             }
             'R' -> {
@@ -185,6 +199,7 @@ class LetterButtonsFragment : Fragment() {
                 val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
                 currentList.add(2, 'R')
                 hangmanViewModel._correctLetters.value = currentList
+                hangmanViewModel.incrementCorrectGuess()
                 btn.visibility = View.INVISIBLE
             }
         }
@@ -305,5 +320,13 @@ class LetterButtonsFragment : Fragment() {
             txtBox5.text = "E"
         }
         hangmanViewModel.incrementGuess()
+    }
+
+    fun resetCorrectLetters() {
+        binding.aButton.visibility = View.VISIBLE
+        binding.gButton.visibility = View.VISIBLE
+        binding.rButton.visibility = View.VISIBLE
+        binding.eButton.visibility = View.VISIBLE
+
     }
 }
