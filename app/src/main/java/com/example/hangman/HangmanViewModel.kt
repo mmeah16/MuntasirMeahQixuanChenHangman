@@ -1,6 +1,7 @@
 package com.example.hangman
 
 import android.widget.Button
+import android.widget.TextView
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,6 +11,8 @@ class HangmanViewModel : ViewModel() {
     val guessedLetters: LiveData<List<Char>> = _guessedLetters
     val _numGuess = MutableLiveData<Int>()
     val _numHint = MutableLiveData<Int>()
+
+    val _correctLetters = MutableLiveData<List<Char>>()
 
 
     fun incrementGuess() {

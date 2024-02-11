@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.MutableLiveData
 import com.example.hangman.databinding.FragmentLetterButtonsBinding
 
 class LetterButtonsFragment : Fragment() {
@@ -55,15 +56,24 @@ class LetterButtonsFragment : Fragment() {
                 }
             }
         }
+        hangmanViewModel._correctLetters.observe(viewLifecycleOwner) { correctLetters ->
+            for (letter in correctLetters) {
+                binding.txtBox1.text = letter.toString()
+            }
+        }
+
         hangmanViewModel._buttonsClicked.observe(viewLifecycleOwner) { buttonsClicked ->
             Log.d("HangmanGame", "These are all the button clicked: $buttonsClicked")
             for (buttonState in buttonsClicked) {
                 val buttonId = buttonState.id
                 val buttonView = when (buttonId) {
+                    R.id.a_button -> binding.aButton
                     R.id.b_button -> binding.bButton
                     R.id.c_button -> binding.cButton
                     R.id.d_button -> binding.dButton
+                    R.id.e_button -> binding.eButton
                     R.id.f_button -> binding.fButton
+                    R.id.g_button -> binding.gButton
                     R.id.h_button -> binding.hButton
                     R.id.i_button -> binding.iButton
                     R.id.j_button -> binding.jButton
@@ -74,6 +84,7 @@ class LetterButtonsFragment : Fragment() {
                     R.id.o_button -> binding.oButton
                     R.id.p_button -> binding.pButton
                     R.id.q_button -> binding.qButton
+                    R.id.r_button -> binding.rButton
                     R.id.s_button -> binding.sButton
                     R.id.t_button -> binding.tButton
                     R.id.u_button -> binding.uButton
@@ -127,6 +138,9 @@ class LetterButtonsFragment : Fragment() {
             'A' -> {
                 binding.txtBox1.text = "A"
                 hangmanViewModel.addClickedButton(btn)
+                val currentList = hangmanViewModel._correctLetters.value?.toMutableList() ?: mutableListOf()
+                currentList.add(0, 'A')
+                hangmanViewModel._correctLetters.value = currentList
                 btn.visibility = View.INVISIBLE
             }
             'E' -> {
@@ -152,6 +166,7 @@ class LetterButtonsFragment : Fragment() {
     private fun resetGame() {
         resetTextBox()
         resetButtons()
+        hangmanViewModel._buttonsClicked.value = emptyList()
         hangmanViewModel._numGuess.value = 0
         hangmanViewModel._numHint.value = 0
     }
@@ -189,8 +204,42 @@ class LetterButtonsFragment : Fragment() {
     private fun resetButtons() {
         hangmanViewModel._numGuess.value = 0
         hangmanViewModel._numHint.value = 0
-        for (btn in hangmanViewModel._buttonsClicked.value?.toMutableList()!!) {
-            btn.visibility = View.VISIBLE
+        val buttonsClicked = hangmanViewModel._buttonsClicked.value
+        if (buttonsClicked != null) {
+            for (buttonState in buttonsClicked) {
+                val buttonId = buttonState.id
+                val buttonView = when (buttonId) {
+                    R.id.a_button -> binding.aButton
+                    R.id.b_button -> binding.bButton
+                    R.id.c_button -> binding.cButton
+                    R.id.d_button -> binding.dButton
+                    R.id.e_button -> binding.eButton
+                    R.id.f_button -> binding.fButton
+                    R.id.g_button -> binding.gButton
+                    R.id.h_button -> binding.hButton
+                    R.id.i_button -> binding.iButton
+                    R.id.j_button -> binding.jButton
+                    R.id.k_button -> binding.kButton
+                    R.id.l_button -> binding.lButton
+                    R.id.m_button -> binding.mButton
+                    R.id.n_button -> binding.nButton
+                    R.id.o_button -> binding.oButton
+                    R.id.p_button -> binding.pButton
+                    R.id.q_button -> binding.qButton
+                    R.id.r_button -> binding.rButton
+                    R.id.s_button -> binding.sButton
+                    R.id.t_button -> binding.tButton
+                    R.id.u_button -> binding.uButton
+                    R.id.v_button -> binding.vButton
+                    R.id.w_button -> binding.wButton
+                    R.id.x_button -> binding.xButton
+                    R.id.y_button -> binding.yButton
+                    R.id.z_button -> binding.zButton
+                    // Add bindings for other buttons here
+                    else -> null
+                }
+                buttonView?.visibility = View.VISIBLE
+            }
         }
     }
     private fun resetTextBox() {
