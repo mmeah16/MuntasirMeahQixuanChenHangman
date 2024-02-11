@@ -53,10 +53,19 @@ class LetterButtonsFragment : Fragment() {
             if (numGuess == 4) {
                 binding.apply {
                     resetTextBox()
+                    resetButtons()
                 }
             }
         }
         hangmanViewModel._correctLetters.observe(viewLifecycleOwner) { correctLetters ->
+            if (correctLetters[0] == 'A' &&
+                correctLetters[1] == 'G' &&
+                correctLetters[2] == 'R' &&
+                correctLetters[3] == 'E' &&
+                correctLetters[4] == 'E') {
+                Toast.makeText(context, "You win!", Toast.LENGTH_SHORT).show()
+                resetGame()
+            }
             for (letter in correctLetters) {
                 if (letter == 'A') {
                     binding.txtBox1.text = letter.toString()
@@ -68,7 +77,6 @@ class LetterButtonsFragment : Fragment() {
                     binding.txtBox4.text = letter.toString()
                     binding.txtBox5.text = letter.toString()
                 }
-
             }
         }
 
@@ -186,6 +194,8 @@ class LetterButtonsFragment : Fragment() {
     private fun resetGame() {
         resetTextBox()
         resetButtons()
+        val initialCorrectLetters = mutableListOf(' ', ' ', ' ', ' ', ' ')
+        hangmanViewModel._correctLetters.value = initialCorrectLetters
         hangmanViewModel._buttonsClicked.value = emptyList()
         hangmanViewModel._numGuess.value = 0
         hangmanViewModel._numHint.value = 0
@@ -264,11 +274,11 @@ class LetterButtonsFragment : Fragment() {
     }
     private fun resetTextBox() {
         binding.apply {
-            txtBox1.text = getString(R.string.string_initial)
-            txtBox2.text = getString(R.string.string_initial)
-            txtBox3.text = getString(R.string.string_initial)
-            txtBox4.text = getString(R.string.string_initial)
-            txtBox5.text = getString(R.string.string_initial)
+            binding.txtBox1.text = "  "
+            binding.txtBox2.text = getString(R.string.string_initial)
+            binding.txtBox3.text = getString(R.string.string_initial)
+            binding.txtBox4.text = getString(R.string.string_initial)
+            binding.txtBox5.text = getString(R.string.string_initial)
         }
     }
     private fun handleButtonClick(letter: Char, btn: Button) {
